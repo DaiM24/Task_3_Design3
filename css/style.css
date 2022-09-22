@@ -25,6 +25,10 @@ h2{
     background-color: black;
     color: aliceblue;
 }
+.animation {
+    animation: jackInTheBox;
+    animation-duration: 1.2s;
+}
 nav > a {
     color: yellow;
     text-decoration: none;
