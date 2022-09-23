@@ -15,9 +15,6 @@ h2{
 .style-h2 {
     border-style: double none;
 }
-.title-about {
-    padding-left: 15px;
-}
 .navbar {
     display: flex;
     align-items: center;
@@ -44,19 +41,20 @@ a:hover {
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
 }
 .element1 {
     grid-column: 1/4;
     background-image: url(../assets/design1_image2.jpg);
-    height: 45vh;
+    height: 50vh;
     background-size: cover;
-    background-position-y: 50%;
+    background-position-y: 55%;
 }
 .element2 {
     grid-column: 1/4;
 }
 .element {
+    display: flex;
+    flex-direction: column;
     color: rgb(10, 10, 10);
     background-color: rgb(238, 238, 92);
     text-align: center;
@@ -68,25 +66,27 @@ a:hover {
 .grid1 {
     display: grid;
     grid-template-columns: 15% 79%;
-    gap: 2em;
-    margin-left: 15px;
-    margin-bottom: 30px;
+    justify-content: center;
+    row-gap: 2rem;
+    column-gap: 1rem;
+    margin-bottom: 40px;
 }
 div > img {
     width: 180px;
     height: 180px;
     border-radius: 100%;
-    margin-left: 30px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 .info {
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
     background-color: rgb(124, 223, 148);
     border-radius: 15px;
-    padding-top: 60px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-p {
+.title-about, p {
     padding-left: 15px;
 }
 .container-contact {
@@ -126,7 +126,6 @@ button:hover {
     color:white;
 }
 .container-rules {
-    font-family: sans-serif;
     padding: 50px;
     font-size: 19px;
     background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(235, 202, 20));
